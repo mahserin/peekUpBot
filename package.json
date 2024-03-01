@@ -1,0 +1,16 @@
+{
+  "name": "peekupbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd client && npm install && cd ../server && npm install && cd ../bot && npm install",
+    "start": "npm run server",
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && npm run dev",
+    "dev": "npm run client",
+    "bot": "cd bot && nodemon index.js"
+  },
+  "author": "MAHSERIN",
+  "license": "ISC"
+}
