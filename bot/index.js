@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 require('dotenv').config({path : path.join(__dirname , '../.env')});
 
 (() => {
-mongoose.connect(process.env.DATABASE_URL).then(() => {
+mongoose.connect(process.env.DB_URL).then(() => {
     console.log('connected to database');
 }).catch(err => console.log(err))
 })()

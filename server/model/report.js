@@ -12,7 +12,7 @@ const schema = mongoose.Schema({
     },
     status : String
 },{
-    timestamp: true
+    timestamps: true
 })
  const model = mongoose.model('reports' , schema)
 

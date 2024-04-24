@@ -10,10 +10,14 @@ const schema = mongoose.Schema({
         type : mongoose.Types.ObjectId ,
         ref : 'users'
     },
-    finished_at : Date
+    
+    closed : {
+        type : Boolean ,
+        default : false
+    }
 
 },{
-    timestamp: true
+    timestamps: true
 })
  const model = mongoose.model('connections' , schema)
 

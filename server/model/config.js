@@ -2,19 +2,21 @@ const mongoose = require('mongoose');
 
 
 const schema = mongoose.Schema({
-    user : {
-        type : mongoose.Types.ObjectId,
-        ref : 'users'
+    nearAge : {
+        type : Boolean,
+        default : false
+    } ,
+    nearCity :{
+        type : Boolean ,
+        default: false
     },
-    age : Number ,
-    city :{
-        type : mongoose.Types.ObjectId,
-        ref : 'cities'
+    sex: {
+        type : String ,
+        default : 'random'
     },
-    sex: Number,
 },{
-    timestamp: true
+    timestamps: true
 })
- const model = mongoose.model('configs' , schema)
 
- module.exports = model
+const model = mongoose.model('configs' , schema)
+module.exports = model

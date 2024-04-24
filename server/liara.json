@@ -1,0 +1,8 @@
+{
+    "disks": [
+      {
+        "name": "profiles",
+        "mountTo": "public/images/profiles"
+      }
+    ]
+  }

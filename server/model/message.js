@@ -14,7 +14,7 @@ connection : {
     ref : 'connections'
 }
 },{
-    timestamp: true
+    timestamps: true
 })
  const model = mongoose.model('' , schema)
 

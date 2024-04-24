@@ -7,9 +7,10 @@ user : {
     ref : 'users'
 },
 traceCode : Number,
-price : Number
+price : Number, 
+status : String
 },{
-    timestamp: true
+    timestamps: true
 })
  const model = mongoose.model('payments' , schema)
 

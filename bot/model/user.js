@@ -8,27 +8,31 @@ const schema  =  mongoose.Schema({
     nickName : String, 
     profileRef : String,
     age : Number ,
+    config : {
+        type : mongoose.Types.ObjectId ,
+        ref : 'configs'
+    },
     role : {
         type : String,
         enum : ['ADMIN', 'USER' , 'OWNER']
     },
-    state : {
-        type : mongoose.Types.ObjectId,
-        ref : 'states'
-    },
-    city : {
-        type : mongoose.Types.ObjectId,
-        ref : 'cities'
-    },
+    state : Object,
+    city : Object,
     sex : {
         type : String 
     },
     coin : {
         type : Number,
-        default : 0
+        default : 5
     },
-    last_message_time  : Date
-}, {timestamp : true})
+    last_message_time  : Date,
+    firstTime : {
+        type : Boolean,
+        default : true
+    },
+    socketId : String,
+    token : Number
+}, { timestamps: true })
 
 const model = mongoose.model('users' , schema)
 

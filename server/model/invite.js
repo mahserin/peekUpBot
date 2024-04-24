@@ -10,7 +10,7 @@ const schema = mongoose.Schema({
     },
     
 },{
-    timestamp: true
+    timestamps: true
 })
  const model = mongoose.model('invites' , schema)
 
