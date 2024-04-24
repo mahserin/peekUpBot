@@ -1,5 +1,0 @@
-RDB diagram : https://dbdiagram.io/d/65daddc55cd0412774bdd2ce
-
-bot:
-add friend method 
-payments
